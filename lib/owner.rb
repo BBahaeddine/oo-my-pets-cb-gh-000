@@ -70,6 +70,12 @@ class Owner
   def feed_fish
     @pets[:fishes].each{|dog| dog.mood = "happy"}
   end
+  
+  def sell_pets
+  end
+  
+  def list_pets
+  end
 end
 
 owner = Owner.new("haha")
