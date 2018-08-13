@@ -26,11 +26,10 @@ class Owner
   
   def species
     @species = "human"
-    # say_species
   end
   
   def say_species
-    self.species
+    @species
   end
   
   def pets 
