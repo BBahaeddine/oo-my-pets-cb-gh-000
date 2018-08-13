@@ -23,10 +23,12 @@ class Owner
   def self.reset_all
     @@all.clear
   end
+  
   def species(specie)
     @species = "human"
     # say_species
   end
+  
   def say_species
     self.species
   end
