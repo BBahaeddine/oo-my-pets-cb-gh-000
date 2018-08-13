@@ -24,7 +24,7 @@ class Owner
     @@all.clear
   end
   
-  def species(specie)
+  def species
     @species = "human"
     # say_species
   end
