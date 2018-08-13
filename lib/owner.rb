@@ -58,6 +58,15 @@ class Owner
     cat = Cat.new(name)
     @pets[:cats] << cat
   end
+  
+  def walk_dogs
+  end
+  
+  def play_with_cats
+  end
+  
+  def feed_fish
+  end
 end
 
 owner = Owner.new("haha")
