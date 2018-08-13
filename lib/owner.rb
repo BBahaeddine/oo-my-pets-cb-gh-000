@@ -2,12 +2,16 @@ require "pry"
 class Owner
   attr_accessor :name
   attr_reader :species
-  attr_reader :pets
+  attr_accessor :pets
   @@all = []
   
   def initialize(name)
     @name = name
-    @pets = pets
+    @pets = {
+      :fishes => [],
+      :dogs => [],
+      :cats => []
+    }
     # @species = "human"
     @@all << self
   end
@@ -32,13 +36,13 @@ class Owner
     return "I am a #{self.species}."
   end
   
-  def pets 
-    return {
-      :fishes => [],
-      :dogs => [],
-      :cats => []
-    }
-  end
+  # def pets 
+  #   return {
+  #     :fishes => [],
+  #     :dogs => [],
+  #     :cats => []
+  #   }
+  # end
   
   def buy_fish(name)
     fish = Fish.new(name)
