@@ -33,12 +33,11 @@ class Owner
   end
   
   def pets 
-    pets = {
+    return {
       :fishes => [],
       :dogs => [],
       :cats => []
     }
-    pets
   end
   
   def buy_fish(name)
